@@ -6,17 +6,32 @@ public class Spawner : MonoBehaviour
 {
     public float spawnRate = .7f;
 
-    public GameObject linePrefab;
+    public float spawnRadius = 20;
+
+    public GameObject monsterPrefab;
 
     private float nextTimeToSpawn = 0f;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (Time.time >= this.nextTimeToSpawn)
         {
-            _ = Instantiate(this.linePrefab, Vector3.zero, Quaternion.identity);
+            Spawn();
             this.nextTimeToSpawn = Time.time + (1f / this.spawnRate);
         }
+    }
+
+    private void Spawn()
+    {
+        var spawnPosition = GetSpawnPosition();
+        _ = Instantiate(this.monsterPrefab, spawnPosition, Quaternion.identity);
+    }
+
+    private Vector2 GetSpawnPosition()
+    {
+        var angle = Random.value * 360;
+        return new Vector2(
+            transform.position.x + (this.spawnRadius * Mathf.Sin(angle * Mathf.Deg2Rad)),
+            transform.position.y + (this.spawnRadius * Mathf.Cos(angle * Mathf.Deg2Rad)));
     }
 }
