@@ -14,7 +14,9 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.magnitude > 50.0f)
+
+        if (transform.position.magnitude > 80.0f)
+
         {
             Debug.Log("Projectile travel too long.");
             Destroy(gameObject);
