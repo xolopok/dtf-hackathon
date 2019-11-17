@@ -38,6 +38,39 @@ TextureImporter:
   - first:
       213: 119521663048319877
     second: shot3_11
+  - first:
+      213: 2208703988740019828
+    second: Bullet_0
+  - first:
+      213: 4385501425044414559
+    second: Bullet_1
+  - first:
+      213: 3029603797402824116
+    second: Bullet_2
+  - first:
+      213: -3300396339194205850
+    second: Bullet_3
+  - first:
+      213: 1595849069685491311
+    second: Bullet_4
+  - first:
+      213: 2281616994717487372
+    second: Bullet_5
+  - first:
+      213: -7715894896725399453
+    second: Bullet_6
+  - first:
+      213: 1823540885998108106
+    second: Bullet_7
+  - first:
+      213: 8191024754275108436
+    second: Bullet_8
+  - first:
+      213: 6088543973832532824
+    second: Bullet_9
+  - first:
+      213: -3016176512631950420
+    second: Bullet_10
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -81,7 +114,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 9
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,13 +167,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shot3_0
+      name: Bullet_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 31
-        width: 45
-        height: 36
+        x: 0
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a0db69018e77d24ba77c6d0c59cb13e
-      internalID: -3091104663222804636
+      spriteID: b8403830ad9c27642800503c2263f98d
+      internalID: 2208703988740019828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_1
+      name: Bullet_1
       rect:
         serializedVersion: 2
-        x: 152
-        y: 31
-        width: 50
-        height: 39
+        x: 122
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8212c2015cb187d4db380bc0b3c229d4
-      internalID: -1329627908270439413
+      spriteID: 730364b70c4604843bf06a59b29417ca
+      internalID: 4385501425044414559
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_2
+      name: Bullet_2
       rect:
         serializedVersion: 2
-        x: 273
-        y: 32
-        width: 51
-        height: 36
+        x: 244
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4547d71da8bde5e42819c404c05c576c
-      internalID: 5251159556436463219
+      spriteID: ad68235e78ea4a44d8e4dbe97b406673
+      internalID: 3029603797402824116
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_3
+      name: Bullet_3
       rect:
         serializedVersion: 2
-        x: 394
-        y: 32
-        width: 51
-        height: 36
+        x: 366
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fef40e862ef69c04e92f72d59cd39f52
-      internalID: -2279911672336380531
+      spriteID: d21de59dc235fe149a91e665c3275d58
+      internalID: -3300396339194205850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_4
+      name: Bullet_4
       rect:
         serializedVersion: 2
-        x: 516
-        y: 30
-        width: 48
-        height: 37
+        x: 488
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eec7b382910f1a545b1045cec53158fa
-      internalID: 1031547699223127227
+      spriteID: 5f119dabfd8f95642affe64baba1e741
+      internalID: 1595849069685491311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_5
+      name: Bullet_5
       rect:
         serializedVersion: 2
-        x: 639
-        y: 29
-        width: 49
-        height: 41
+        x: 610
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88ff5a1953d6aba42a8e7d450c186f8f
-      internalID: -866933657068834089
+      spriteID: fa20e87e316841d49abc15be8572e2f0
+      internalID: 2281616994717487372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_6
+      name: Bullet_6
       rect:
         serializedVersion: 2
-        x: 762
-        y: 29
-        width: 46
-        height: 39
+        x: 732
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a492233f6aa5ad8479f7aa86ab213b4c
-      internalID: -3287285292548049565
+      spriteID: b8f1d295057bcb442a6ed724606a9c87
+      internalID: -7715894896725399453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_7
+      name: Bullet_7
       rect:
         serializedVersion: 2
-        x: 885
-        y: 29
-        width: 44
-        height: 41
+        x: 854
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,20 +328,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 714e25e0eb452ed42ba7ab4064ceeb4c
-      internalID: -8686646607797596428
+      spriteID: 8a67580d24fd32f4caee08b02381ca1e
+      internalID: 1823540885998108106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_8
+      name: Bullet_8
       rect:
         serializedVersion: 2
-        x: 1007
-        y: 29
-        width: 42
-        height: 43
+        x: 976
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 587218f5d0011e04094959202d0fc574
-      internalID: 208630872482207989
+      spriteID: a5c4c42eeaf969c48a3e996d7f6b8ffd
+      internalID: 8191024754275108436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_9
+      name: Bullet_9
       rect:
         serializedVersion: 2
-        x: 1130
-        y: 29
-        width: 40
-        height: 42
+        x: 1098
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -337,20 +370,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd17c4d78f989764db62faece079958c
-      internalID: -5902856475006448007
+      spriteID: 2f9556889368d974e89b5fb0e4392c0c
+      internalID: 6088543973832532824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shot3_10
+      name: Bullet_10
       rect:
         serializedVersion: 2
-        x: 1250
-        y: 32
-        width: 41
-        height: 37
+        x: 1220
+        y: 0
+        width: 121
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,29 +391,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32c2c93dd3d3f554d9d0dd06161d2475
-      internalID: 6429740631657005102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shot3_11
-      rect:
-        serializedVersion: 2
-        x: 1370
-        y: 32
-        width: 44
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a104d8ac6759054dabc3841549d9ee5
-      internalID: 119521663048319877
+      spriteID: 01d75d2436580b14d99daa706e7bc2d6
+      internalID: -3016176512631950420
       vertices: []
       indices: 
       edges: []
