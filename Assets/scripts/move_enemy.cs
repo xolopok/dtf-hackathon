@@ -26,12 +26,14 @@ public class move_enemy : MonoBehaviour
         transform.position = Vector3.MoveTowards(gameObject.transform.position,Player.transform.position, Time.deltaTime*speed);
     }
 
+    manager_menu manager_Menu = new manager_menu();
         void OnTriggerEnter2D(Collider2D col)
         {
             if (col.tag == "Player")
             {
             Debug.Log("Конец игры");
-                Destroy(gameObject);
+                Destroy(col);
+
                 managerpoints.GetComponent<managerpoints>().AddPoints(1);
             }
 
