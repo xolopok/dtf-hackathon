@@ -7,8 +7,6 @@ public class Hero : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
 
-    private Vector2 _castPosition;
-
     public int castType = 0;
 
     public int castForm = 0;
@@ -24,26 +22,24 @@ public class Hero : MonoBehaviour
         this._rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
-    {
-        this._castPosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-    }
-
     public void OnFire()
     {
-        var direction = (this._castPosition - this._rigidbody.position);
-        direction.Normalize();
+        Debug.Log("FIRE!!!");
+
+        var castPosition = (Vector2)Camera.main.ScreenToWorldPoint(Pointer.current.position.ReadValue());
+        var castDirection = (castPosition - this._rigidbody.position);
+        castDirection.Normalize();
 
         switch (this.castForm)
         {
             case 0:
-                CastOne(direction);
+                CastOne(castDirection);
                 break;
             case 1:
-                CastMulti(direction);
+                CastMulti(castDirection);
                 break;
             case 2:
-                CastCircle(direction);
+                CastCircle(castDirection);
                 break;
         }
     }
