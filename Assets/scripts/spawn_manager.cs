@@ -5,7 +5,6 @@ using UnityEngine;
 public class spawn_manager : MonoBehaviour
 {
     public int ran; //количество мобов в волне
-    public  float period_spawn = 3f;//частота спавна в секундах
     public GameObject enemy; 
 
     void Start()
@@ -21,21 +20,26 @@ public class spawn_manager : MonoBehaviour
     void Spawn(int ran)
         {
 
-         for (int i=1;i<=ran;i++)
+     for (int i=1;i<=ran;i++)
        {
-            var vec = new Vector3(Random.Range(-20,20),Random.Range(-10,10),0);
+            float posx = Random.Range(-61, 61);
+            float posy = Random.Range(-39, 39);
+            
+            var vec = new Vector3(posx, posy, 0);
             var qec = new Quaternion(0,0,0,0);
+
+
             GameObject.Instantiate(enemy,vec,qec);               
        }
+    }
 
-        }
-
-   public float elaps = 5f;
+    float elaps = 5f;
+    public float timer = 3f;//частота спавна в секундах
 
     void AutoRun()
         {
             elaps-=Time.deltaTime;
-        if(elaps<=0f)
+        if(elaps<= timer)
             {
             ran = Random.Range(2, 6);  
              Spawn(ran);
