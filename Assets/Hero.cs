@@ -27,6 +27,7 @@ public class Hero : MonoBehaviour
         if (Input.GetButtonDown("Cast Type 1"))
         {
             this.castType = 0;
+
         }
 
         if (Input.GetButtonDown("Cast Type 2"))

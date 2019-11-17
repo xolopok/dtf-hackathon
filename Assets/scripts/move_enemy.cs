@@ -8,6 +8,7 @@ public class move_enemy : MonoBehaviour
   public  float speed = 8f;
     public GameObject Player;
     public GameObject managerpoints;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,15 +28,23 @@ public class move_enemy : MonoBehaviour
     }
 
     manager_menu manager_Menu = new manager_menu();
+     
         void OnTriggerEnter2D(Collider2D col)
         {
+
             if (col.tag == "Player")
             {
             Debug.Log("Конец игры");
-                Destroy(col);
+            managerpoints.GetComponent<managerpoints>().AddPoints(1);
+            if (PlayerPrefs.GetInt("Record") < managerpoints.GetComponent<managerpoints>().points)
+                PlayerPrefs.SetInt("Record", managerpoints.GetComponent<managerpoints>().points);
+            PlayerPrefs.Save();
+            manager_Menu.TextRecord.text = "Highest record - " + PlayerPrefs.GetInt("Record").ToString();
 
-                managerpoints.GetComponent<managerpoints>().AddPoints(1);
-            }
+            Destroy(col);
+
+             
+        }
 
         if (col.tag == "bullet")
         {

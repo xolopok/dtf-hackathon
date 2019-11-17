@@ -8,7 +8,9 @@ public class attacks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        but[1].GetComponent<Image>().color = Color.red;
+        but[3].GetComponent<Image>().color = Color.red;
+        but[6].GetComponent<Image>().color = Color.red;
     }
     private Vector3  MousePos;
     // Update is called once per frame
@@ -18,12 +20,12 @@ public class attacks : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Alpha1)) attack1();
         if (Input.GetKeyDown(KeyCode.Alpha2)) attack2();
-        if (Input.GetKeyDown(KeyCode.Alpha3)) attack3();
-        if (Input.GetKeyDown(KeyCode.Alpha4)) attack4();
-        if (Input.GetKeyDown(KeyCode.Alpha5)) attack5();
-        if (Input.GetKeyDown(KeyCode.Alpha6)) attack6();
-        if (Input.GetKeyDown(KeyCode.Alpha7)) attack7();
-        if (Input.GetKeyDown(KeyCode.Alpha8)) attack8();
+        if (Input.GetKeyDown(KeyCode.Q)) attack3();
+        if (Input.GetKeyDown(KeyCode.W)) attack4();
+        if (Input.GetKeyDown(KeyCode.E)) attack5();
+        if (Input.GetKeyDown(KeyCode.A)) attack6();
+        if (Input.GetKeyDown(KeyCode.S)) attack7();
+        if (Input.GetKeyDown(KeyCode.D)) attack8();
 
 
     }

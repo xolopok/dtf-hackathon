@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class Bullet : MonoBehaviour
 {
     public int type = 0;
@@ -11,19 +11,23 @@ public class Bullet : MonoBehaviour
     public GameObject shardPrefab;
 
     public float explosionForce = 50f;
+    private void Start()
+    {
+        managerpoints = GameObject.Find("ManagerPoints"); 
+    }
 
     private void Update()
     {
         if (transform.position.magnitude > 50.0f)
         {
-            Debug.Log("Projectile travel too long.");
+        //    Debug.Log("Projectile travel too long.");
             Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Projectile collided with " + collision.gameObject);
+      //  Debug.Log("Projectile collided with " + collision.gameObject);
 
         var monster = collision.gameObject.GetComponent<Monster>();
         if (monster is null)
@@ -75,12 +79,14 @@ public class Bullet : MonoBehaviour
         bullet.Launch(castDirection, this.explosionForce);
     }
 
+    public GameObject managerpoints;
     private void DamageMonster(Monster monster)
     {
         monster.health -= (int)(50 * monster.damageFactor);
         if (monster.health <= 0)
         {
             Destroy(monster.gameObject);
+            managerpoints.GetComponent<managerpoints>().AddPoints(1);
         }
     }
 }
