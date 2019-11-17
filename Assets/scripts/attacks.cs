@@ -31,17 +31,12 @@ public class attacks : MonoBehaviour
     public Button[] but = new Button[9];
 
 
-   
-
-
-
-
 
     //в одну выбранную сторону (куда смотрит мышка)
   public  void attack1()
         {
        
-        for(int i=1;i<=8;i++)
+        for(int i=1;i<=2;i++)
             but[i].GetComponent<Image>().color = Color.white;
 
         but[1].GetComponent<Image>().color = Color.red;
@@ -54,7 +49,7 @@ public class attacks : MonoBehaviour
     //в две стороны - вверх_И_вниз или влево_И_вправо
     public void attack2()
         {
-        for (int i = 1; i <= 8; i++)
+        for (int i = 1; i <= 2; i++)
             but[i].GetComponent<Image>().color = Color.white;
 
         but[2].GetComponent<Image>().color = Color.red;
@@ -63,7 +58,7 @@ public class attacks : MonoBehaviour
     //ввер в выбранную сторону
     public void attack3()
         {
-        for (int i = 1; i <= 8; i++)
+        for (int i = 3; i <= 5; i++)
             but[i].GetComponent<Image>().color = Color.white; 
 
         but[3].GetComponent<Image>().color = Color.red;
@@ -72,7 +67,7 @@ public class attacks : MonoBehaviour
     //расходящийся круг 
     public void attack4()
         {
-        for (int i = 1; i <= 8; i++)
+        for (int i = 3; i <= 5; i++)
             but[i].GetComponent<Image>().color = Color.white;
 
         but[4].GetComponent<Image>().color = Color.red;
@@ -81,7 +76,7 @@ public class attacks : MonoBehaviour
 
     public void attack5()
     {
-        for (int i = 1; i <= 8; i++)
+        for (int i = 3; i <= 5; i++)
             but[i].GetComponent<Image>().color = Color.white;
 
         but[5].GetComponent<Image>().color = Color.red;
@@ -89,7 +84,7 @@ public class attacks : MonoBehaviour
 
     public void attack6()
     {
-        for (int i = 1; i <= 8; i++)
+        for (int i = 6; i <= 8; i++)
             but[i].GetComponent<Image>().color = Color.white;
 
         but[6].GetComponent<Image>().color = Color.red;
@@ -97,14 +92,14 @@ public class attacks : MonoBehaviour
 
     public void attack7()
     {
-        for (int i = 1; i <= 8; i++)
+        for (int i = 6; i <= 8; i++)
             but[i].GetComponent<Image>().color = Color.white;
 
         but[7].GetComponent<Image>().color = Color.red;
     }
     public void attack8()
     {
-        for (int i = 1; i <= 8; i++)
+        for (int i = 6; i <= 8; i++)
             but[i].GetComponent<Image>().color = Color.white;
 
         but[8].GetComponent<Image>().color = Color.red;
