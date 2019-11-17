@@ -21,11 +21,11 @@ public class Bullet : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Projectile collided with " + other.gameObject);
+        Debug.Log("Projectile collided with " + collision.gameObject);
 
-        var monster = other.gameObject.GetComponent<Monster>();
+        var monster = collision.gameObject.GetComponent<Monster>();
         if (monster is null)
         {
             return;
